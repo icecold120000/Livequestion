@@ -12,3 +12,6 @@
 		<link rel="icon" type="image/jpg" href="Contents/icon.jpg"/>
 	</head>
 	<body>
+		<?php
+			require_once("Includes/nav.php");
+		?>
