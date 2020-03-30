@@ -37,6 +37,9 @@
 				</div>
 			</div>
 		</form>
+		<div class="more">
+			<p>Pas de compte.<a href="inscription.php">Appuyer ici pour créer un compte utilisateur.</a></p>
+		</div>
 	</main>
 <?php
 	require_once('/Includes/footer.php');

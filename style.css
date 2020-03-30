@@ -138,7 +138,7 @@ h5{
 }
 
 
-
+/*CSS de la Partie 3 du site*/
 
 
 /*CSS de la Partie 4 du site*/
@@ -219,10 +219,14 @@ h5{
 	display: block;
 }
 
-#more{
+.more{
 	padding:25px;
+	text-align:center;
 }
 
+.more a {
+	color: #ec008c;
+}
 /*CSS du footer*/
 
 footer
@@ -261,7 +265,7 @@ footer
 
 form 
 {
-	padding: 10% 0 10% 0;
+	padding: 10% 0 0 0;
 	text-align:center;
 }
 

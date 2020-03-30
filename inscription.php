@@ -55,10 +55,12 @@
 				</div>
 				<div class="submit">
 					<input type="submit" value="Valider" class="btn btn-primary">
-					<a href="inscription.php">Créer un compte utilisateur</a>
 				</div>
 			</div>
 		</form>
+		<div class="more">
+			<p>Déjà inscrit.<a href="formconnexion.php">Appuyer ici pour se connecter.</a></p>
+		</div>
 	</main>
 <?php
 	require_once('/includes/footer.php');
