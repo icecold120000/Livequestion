@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nom d'utilisateur | LiveQuestion</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+
+	<body class="ecran">
+
+		<div class="titrepage">
+			<h3 align="center">Modifiez votre profil</h3>	
+		</div>
+	
+	<section id="user" class="container-fluid" align="center">
+		
+		<div class="container">
+			<div class="imageprofil">
+				<img src="Default.jpg" class="imageprofil">
+				<form class="bouttonchange"> 
+    				<button class="btn btn-primary" onclick="document.getElementById('getFile').click()"><img src="Contents/Upload_Profile/Default.jpg" alt="Votre photo" ></button>
+    				<input type='file' id="getFile" class="collapse">
+				</form>
+			</div>
+				<div class="formulaire">
+					<div>
+						<span>Nom d'utilisateur *</span>
+						<input type="text" name="nameuser" placeholder="Votre nom d'utlilisateur" class="input">
+					</div>
+					<div>
+						<span>E-mail *</span>
+						<input type="text" name="emailuser" placeholder="Votre E-mail" class="input">
+					</div>
+					<div>
+						<span>Mot de passe *</span>
+						<input type="text" name="passworduser" placeholder="Votre mot de passe" class="input">
+					</div>
+					<div>
+						<input type="submit" name="submit" placeholder="Valider" class="bouttonsubmit">	
+					</div>
+					<div class="positionproposition">
+						<div>
+							<span class="proposition">Souhaitez-vous changer de mot de passe ?</span>
+						</div>
+						<div>
+							<span class="proposition">* = Obligatoire </span>
+						</div>
+					</div>
+				</div>
+			</div>	
+	</section>
+
+
+	</body>
+</html>
