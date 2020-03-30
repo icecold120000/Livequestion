@@ -1,20 +1,19 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <?php 
 	require_once('./Includes/header.php');
-	require_once('./Includes/nav.php');
 	require_once('./Traitement/traitement_incription.php');
-
 	
-		if (!empty($_POST)) {
-			$traitement = traitement_inscription($_POST);
-
-		}
+	if (!empty($_POST)) {
+		$traitement = traitement_inscription($_POST);
+	}
 ?>
 	<main>
-		<a href="index.php"><button class="btn btn-success">Retourner à la page d'acceuil</button></a>
+		<div class="retour">
+			<a href="index.php"><button class="btn btn-success">Retourner à la page d'acceuil</button></a>
+		</div>
 		<form action="#" method="_POST">
-			<div class="container-fluid">
-				<div>
+			<div class="bordure">
+				<div class="saisie">
 					<label for="nom">Nom de l'utilisateur:</label>				
 					<input type="text" name="nom" id="nom" placeholder="Veuillez saisir votre utilisateur:" />
 					<span class="erreur">
@@ -25,7 +24,7 @@
 						?>
 					</span>
 				</div>
-				<div>
+				<div class="saisie">
 					<label for="email">Email:</label>
 					<input type="text" name="email" id="email" placeholder="Veuillez saisir votre émail:" />
 					<span class="erreur">
@@ -36,14 +35,14 @@
 						?>
 					</span>
 				</div>
-				<div>
+				<div class="saisie">
 					<label for="genre">Genre:</label>
 					<select id="genre">
 						<option value="valeur1" selected>Homme</option>
 						<option value="valeur2">Femme</option>
 					</select>
 				</div>
-				<div>
+				<div class="saisie">
 					<label for="mdp">Mot de passe:</label>
 					<input type="text" name="mdp" id="mdp" placeholder="Veuillez saisir votre mot de passe:" />
 					<span class="erreur">
@@ -54,7 +53,7 @@
 						?>
 					</span>
 				</div>
-				<div>
+				<div class="submit">
 					<input type="submit" value="Valider" class="btn btn-primary">
 					<a href="inscription.php">Créer un compte utilisateur</a>
 				</div>

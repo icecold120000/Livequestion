@@ -23,6 +23,7 @@ span {
 }
 
 
+
 /*CSS de la navbar*/
 
 .navbarcouleur {
@@ -258,14 +259,32 @@ footer
 
 /*CSS de la page d'inscription et de la page de connexion du site*/
 
-
 form 
 {
-	padding: 15% 0 15% 0;
+	padding: 10% 0 10% 0;
+	text-align:center;
 }
 
+.erreur {
+	color: red;
+}
 
+.bordure{
+	width:50%;
+	border:2px solid;
+	background-color:whitesmoke;
+}
 
-.erreur{
-	color:red;
+.saisie{
+	margin:40px;
+}
+
+.retour {
+	margin-top:40px;
+	position: relative;
+	left: 40%;
+}
+
+.submit{
+	margin-bottom:20px;
 }
