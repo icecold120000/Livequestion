@@ -10,14 +10,14 @@
 						    <a class="nav-link" href="#">Link 1<span class="sr-only"></span><i class="fas fa-caret-down"></i></a>   
 						</li>
 						<li class="nav-item">
-						  <a class="nav-link" href="#">Link 2<span><i class="fas fa-caret-down"></i></a></span></a>
+						  <a class="nav-link" href="#">Link 2<i class="fas fa-caret-down"></i></a>
 
 						</li>
 						<li class="nav-item">
-						  <a class="nav-link" href="#">Link 3<span><i class="fas fa-caret-down"></i></a></span></a>
+						  <a class="nav-link" href="#">Link 3<i class="fas fa-caret-down"></i></a>
 						</li>
 						<li class="nav-item">
-						  	<a class="nav-link" href="#">Link 4<span><i class="fas fa-caret-down"></i></a></span></a>
+						  	<a class="nav-link" href="#">Link 4<i class="fas fa-caret-down"></i></a>
 						</li>
 					</ul>
 				</div>
