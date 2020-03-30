@@ -1,6 +1,16 @@
 <?php
-	function Request($db, $request){
-		$req = $db->query($request)->fetchAll();
+	require_once('./DB/connect.php');
+
+	function Request($db, $sql, $params){
+		$req = $db->prepare($sql);
+		foreach($params as $cle => $param){
+			$req->bindParam($cle, $param);
+		}
+		$req = $req->execute();
 		return $req;
+	}
+
+	function ajout(array $donnees) {
+
 	}
 ?>
