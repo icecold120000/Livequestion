@@ -92,27 +92,26 @@
 			<h6>Sed ut perspiciatis unde omnis iste natus error sit volupattem </h6>
 			<h6>accusantium doloremque lauudantium, totam rem aperiam, eaque ipsa.</h6>
 			<?php
-				foreach($donnees as $donnee){
+				foreach($afficheQuestions as $afficheQuestion){
 			?>
-
-			<div id="Q<?php echo $donnee['question']['id_question']; ?>">
-				<p><?php echo $donnee['question']['titre_question']; ?>
-					<button class="btn-light" type="button" data-toggle="collapse" data-target="#collapse<?php echo $i; ?>" aria-expanded="false" aria-controls="collapse<?php echo $i; ?>" onclick="button<?php echo $i; ?>();">
+			<div id="Q<?php echo afficheQuestion['question']['son_id_q']; ?>">
+				<p><?php echo afficheQuestion['question']['son_titre']; ?>
+					<button class="btn-light" type="button" data-toggle="collapse" data-target="#collapse<?php echo $afficheQuestion['question']['son_id_q']; ?>" aria-expanded="false" aria-controls="collapse<?php echo $afficheQuestion['question']['son_id_q']; ?>" onclick="button<?php echo $afficheQuestion['question']['son_id_q']; ?>();">
 						<i class="fas fa-caret-down"></i>
 					</button>
 				</p>
-				<div class="collapse" id="collapse<?php echo $i; ?>">
+				<div class="collapse" id="collapse<?php echo $afficheQuestion['question']['son_id_q']; ?>">
 					<div class="card card-body">
-						<span><?php echo $donnee['reponse']['contenu_reponse']; ?></span>
+						<span><?php echo afficheReponse['reponse']['son_contenu']; ?></span>
 					</div>
 				</div>
-			</div>
-			<div class="more">
-				<p>Still have unanswered questions?<a href="#">Get in touch.</a></p>
 			</div>
 			<?php
 				} 
 			?>
+			<div class="more">
+				<h6>Still have unanswered questions ?<a href="#"> Get in touch.</a></h6>
+			</div>
 		</section>
 	</main>
 	<?php
