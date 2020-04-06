@@ -10,18 +10,24 @@
 		return $req;
 	}
 
-	function ajout(array $affiche){
+	function ajoutDate(array $afficheDate){
 		
 		$date =[
 			'id_date' => 'son_id_d',
 			'creation_date' =>'sa_date_creation',
 		];
+	}
 
+	function ajoutUser(array $afficheUser){
+		
 		$utilisateur =[
 			'id_utilisateur' => 'son_id_u',
 			'pseudo_utilisa$teur' =>'son_pseudo',
 			'email_utilisateur' =>'son_email',
 		];
+	}
+
+	function ajoutQuestion(array $afficheQuestion){
 
 		$question =[
 			'id_question' => 'son_id_q',
@@ -30,6 +36,9 @@
 			"#id_utilisateur" => 'son_user',
 			"#id_date" => 'sa_date',
 		];
+	}
+
+	function ajoutReponse(array $afficheReponse){
 
 		$reponse =[
 			'id_reponse' => 'son_id_r',
