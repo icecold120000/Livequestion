@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="style.css">
 <?php 
 	require_once('./Includes/header.php');
 	require_once('./Traitement/traitement_incription.php');
@@ -18,8 +17,8 @@
 					<input type="text" name="nom" id="nom" placeholder="Veuillez saisir votre utilisateur:" />
 					<span class="erreur">
 						<?php
-							if (isset($traitement) && !$traitement['succes'] && isset($traitement['erreurs']['user'])) {
-								echo $traitement['erreurs']['user'];
+							if (isset($traitement) && !$traitement['succes'] && isset($traitement['erreurs']['utilisateur'])) {
+								echo $traitement['erreurs']['utilisateur'];
 							}
 						?>
 					</span>
