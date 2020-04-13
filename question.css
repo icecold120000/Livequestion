@@ -1,0 +1,41 @@
+#left{
+	float: left;
+}
+
+#right{
+	float: right;
+}
+
+.form{
+	position: relative;
+	bottom: 0px;
+}
+
+#lesquestions{
+	display: block;
+	padding: 30px;
+}
+
+#lesquestions h1{
+	color: red;
+	font-size: 40px;
+	padding-bottom: 20px; 
+}
+
+i.fas.fa-caret-down
+{
+	font-size: 15px;
+}
+
+#lesreponses{
+	display: inline-block;
+}
+
+#lesreponses span{
+	font-size: 10px;
+}
+
+i.fas.fa-thumbs-up
+{
+	font-size: 10px;
+}
