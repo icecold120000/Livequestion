@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="question.css">
 <?php
 	require_once('./Includes/header.php');
 ?>
@@ -46,6 +45,6 @@
 			</form>
 		</div>
 	</main>
-	<?php
-		require_once('./Includes/footer.php');
-	?>
+<?php
+	require_once('./Includes/footer.php');
+?>

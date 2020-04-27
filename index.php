@@ -1,9 +1,7 @@
 
 <?php
 	require_once('./Includes/header.php');
-
 ?>
-
 	<main>
 		<!--Partie accueil-->
 		<section id="part1" >
@@ -110,10 +108,10 @@
 				} 
 			?>
 			<div class="more">
-				<h6>Still have unanswered questions ?<a href="#"> Get in touch.</a></h6>
+				<h6>Still have unanswered questions ?<a href="vuequestion.php"> Get in touch.</a></h6>
 			</div>
 		</section>
 	</main>
-	<?php
-		require_once('./Includes/footer.php');
-	?>
+<?php
+	require_once('./Includes/footer.php');
+?>

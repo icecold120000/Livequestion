@@ -40,6 +40,6 @@
 			</div>
 		</div>
 	</section>
-	<?php
-		require_once('./Includes/footer.php');
-	?>
+<?php
+	require_once('./Includes/footer.php');
+?>
