@@ -56,6 +56,11 @@ i.fas.fa-bars{
 }
 
 
+form {
+	padding: 10% 0 0 0;
+	text-align: center;
+}
+
 
 /*CSS de la page acceuil*/
 
@@ -262,11 +267,6 @@ footer
 
 /*CSS de la page d'inscription et de la page de connexion du site*/
 
-form 
-{
-	padding: 10% 0 0 0;
-	text-align:center;
-}
 
 .erreur {
 	color: red;
@@ -299,17 +299,17 @@ form
 	text-align: center;
 }
 
-	#user.formulaire {
-		margin-top: 40px;
-	}
+#user.formulaire {
+	margin-top: 40px;
+}
 
 
-	#user h1 {
-		margin-top: 5px;
-		font-weight: bold;
-		color: #fff;
-		font-size: 20px;
-	}
+#user h1 {
+	margin-top: 5px;
+	font-weight: bold;
+	color: #fff;
+	font-size: 20px;
+}
 
 #imageprofil {
 	height: 200px;
@@ -350,3 +350,49 @@ form
 
 /*CSS de la Page administratif*/
 
+#adminpage h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	font-size: 50px;
+}
+
+#adminpage nav {
+	background: #FF33F0;
+}
+
+
+#adminpage h2 {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.stylequestions {
+	font-weight: bold;
+	background-color: #E9DDDB;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+#general {
+	margin-top: 10px;
+}
+
+i.fas.fa-trash i.fas.fa-edit {
+	margin-left: 10px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 20px;
+}
+
+#adminpage p {
+	margin-left: 2px;
+}
+
+/*CSS de la page Ajout question*/
+
+#ajoutQuestion{
+	text-align:center;
+	background-color:whitesmoke;
+}
