@@ -1,6 +1,6 @@
 <?php 
 	require_once('./Includes/header.php');
-	require_once('./Traitement/traitement_incription.php');
+	require_once('./Traitement/traitement_inscription.php');
 	
 	if (!empty($_POST)) {
 		$traitement = traitement_inscription($_POST);
@@ -62,5 +62,5 @@
 		</div>
 	</main>
 <?php
-	require_once('/includes/footer.php');
+	require_once('./includes/footer.php');
  ?>
