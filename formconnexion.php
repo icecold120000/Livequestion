@@ -22,7 +22,7 @@
 				</div>
 				<div class="saisie">
 					<label for="mdp">Mot de passe:</label>
-					<input type="text" name="mdp" id="mdp" placeholder="Veuillez saisir votre mot de passe" />
+					<input type="password" name="mdp" id="mdp" placeholder="Veuillez saisir votre mot de passe" />
 					<span class="erreur">
 						<?php
 							if (isset($traitement) && isset($traitement['erreurs']['mdp'])) {
