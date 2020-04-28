@@ -14,7 +14,7 @@
 					<input type="text" name="nom" id="nom" placeholder="Veuillez saisir votre utilisateur" />
 					<span class="erreur">
 						<?php
-							if (isset($traitement) && !$traitement['succes'] && isset($traitement['erreurs']['utilisateur'])) {
+							if (isset($traitement) && isset($traitement['erreurs']['utilisateur'])) {
 								echo $traitement['erreurs']['utilisateur'];
 							}
 						?>
@@ -25,7 +25,7 @@
 					<input type="text" name="mdp" id="mdp" placeholder="Veuillez saisir votre mot de passe" />
 					<span class="erreur">
 						<?php
-							if (isset($traitement) && !$traitement['succes'] && isset($traitement['erreurs']['mdp'])) {
+							if (isset($traitement) && isset($traitement['erreurs']['mdp'])) {
 								echo $traitement['erreurs']['mdp'];
 							}
 						?>
@@ -40,7 +40,7 @@
 		</div>
 	</main>
 <?php
-	require_once('/Includes/footer.php');
+	require_once('./Includes/footer.php');
  ?>
 
 
