@@ -92,15 +92,15 @@
 			<?php
 				foreach($afficheQuestions as $afficheQuestion){
 			?>
-			<div id="Q<?php echo afficheQuestion['question']['son_id_q']; ?>">
-				<p><?php echo afficheQuestion['question']['son_titre']; ?>
+			<div id="Q<?php echo $afficheQuestion['question']['son_id_q']; ?>">
+				<p><?php echo $afficheQuestion['question']['son_titre']; ?>
 					<button class="btn-light" type="button" data-toggle="collapse" data-target="#collapse<?php echo $afficheQuestion['question']['son_id_q']; ?>" aria-expanded="false" aria-controls="collapse<?php echo $afficheQuestion['question']['son_id_q']; ?>" onclick="button<?php echo $afficheQuestion['question']['son_id_q']; ?>();">
 						<i class="fas fa-caret-down"></i>
 					</button>
 				</p>
 				<div class="collapse" id="collapse<?php echo $afficheQuestion['question']['son_id_q']; ?>">
 					<div class="card card-body">
-						<span><?php echo afficheReponse['reponse']['son_contenu']; ?></span>
+						<span><?php echo $afficheReponse['reponse']['son_contenu']; ?></span>
 					</div>
 				</div>
 			</div>
