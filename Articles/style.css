@@ -1,0 +1,205 @@
+.liens
+{
+	text-align: center;
+}
+
+.menu_lien
+{
+	text-align: center;
+}
+
+h2
+{
+	text-align: right;
+}
+
+.description
+{
+	text-align: right;
+}
+/*Commentaire*/
+.right
+{
+	position: absolute;
+	left: 75%;
+	width: 25%;
+	display: inline-block;
+}
+/*Image personnes*/
+.persona3
+{
+	width: 5%;
+	margin-left: 65%;
+}
+
+.persona1
+{
+	height: 5%;
+}
+/*Commentaires*/
+.comments1
+{
+	padding: 20px;
+	margin-bottom: 30px;
+	height: 175px;
+}
+
+.commentp{
+	height: 100%;
+	width: 90%;
+	display: inline-block;
+	float: right;
+}
+/*Image de profil*/
+.CommentIcon{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	padding:20px;
+	margin-left: 20px;
+}
+
+.description-perso
+{
+	text-align: right;
+}
+/*Menu de navigation*/
+.menu
+{
+	word-spacing: 50%;
+	color: white;
+	margin-left: 10px;
+	font-weight: bold;
+}
+/*Menu*/
+.bloc
+{
+	background-position: right top;
+	background-color: #FF007F;
+	font-color : pink;
+}
+
+.img
+{
+	width: 80px;
+}
+
+.img2
+{
+	width: 110px;
+}
+/*Image de profile*/
+.profile
+{
+	width: 30px;
+}
+/*Commentaire*/
+.right
+{
+	position: absolute;
+	right: 75%;
+	width: 25%;
+	display: inline-block;
+}
+
+.folder
+{
+	width: 10%;
+}
+/*Compte utilisateur*/
+.compte
+{
+	text-align: right;
+	margin-right: 2%;
+	margin-bottom: -5%;
+}
+/*Fond gris*/
+.background-grey
+{
+	background-color: #E6E6E6;
+
+}
+/*Image ajout fichier*/
+.image
+{
+	width: 10%;
+}
+/*Arrière plan index3*/
+.black
+{
+	background-color: #2E2E2E;
+}
+/*Description objectif atteint index3*/
+.texte
+{
+	color : white;
+}
+
+p
+{
+	font-weight: bold;
+}
+
+label
+{
+	font-weight: bold;
+}
+
+.background-grey1
+{
+	margin-bottom: 5px;
+	background-color: #E6E6E6;
+}
+
+.img4
+{
+	width: 45px;
+}
+/*Durée de poste du commentaire*/
+.comment-time
+{
+	font-size: 10px;
+}
+
+.profil
+{
+	text-align: right;
+	color: white;
+}
+
+.image-utilisateur
+{
+	height: 5%;
+	border-radius: 100%;
+}
+/*Boutons annuler / valider index3*/
+.choix
+{
+	color: black;
+}
+/*Image index3*/
+.nourriture
+{
+	width: 25%;
+}
+/*Graphique index3*/
+.anneaux
+{
+	width: 30%;
+	margin-left: 10%;
+}
+/*Titre question index3*/
+h3
+{
+	color: grey;
+}
+/*Graphiques index3*/
+.graphique
+{
+	width: 50%;
+}
+/*Commentaires*/
+.comments
+{
+	color: white;
+}
