@@ -1,8 +1,7 @@
 <!-- haut de page -->
 <?php
-	require_once("Includes/head.php");
+	require_once("./Includes/header.php");
 ?>
-<link rel="stylesheet" type="text/css" href="style.css">
 <!-- Menu -->
 <div class="grey">
 	<div class="bloc">
