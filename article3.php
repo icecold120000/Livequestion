@@ -1,6 +1,6 @@
 <!-- Haut de page -->
 <?php
-	require_once("Includes/head.php");
+	require_once("./Includes/header.php");
 ?>
 <!-- Menu -->
 <div class="black">
