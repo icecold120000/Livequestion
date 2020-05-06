@@ -1,6 +1,6 @@
 <?php
-	require_once("DB/connect.php");
-	require_once("DB/request.php");
+	require_once("./DB/connect.php");
+	require_once("./DB/request.php");
 ?>
 <html>
 	<head>
@@ -18,5 +18,5 @@
 	</head>
 	<body>
 		<?php
-			require_once("Includes/nav.php");
+			require_once("./Includes/nav.php");
 		?>
