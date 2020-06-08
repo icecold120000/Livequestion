@@ -4,6 +4,7 @@
 	
 	if (!empty($_POST)) {
 		$traitement = PreTraitement($_POST);
+		var_dump($traitement);
 		if($traitement['success']){
 			Request($DB, "INSERT user FROM utilisateur", $pseudo_utilisateur);
 			Request($DB, "INSERT email FROM utilisateur", $email_utilisateur);
