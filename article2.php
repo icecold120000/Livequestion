@@ -13,7 +13,7 @@
 	<a href="index3" class="menu">Article 3</a>
 	<div class="profil"
 		<a class="points">776 points</a>
-		<img src="Contents/bleu.jpg" class="image-utilisateur"
+		<img src="Contents/bleu.jpg" class="image-utilisateur">
 	</div>
 </div>
 <!-- Compte utilisateur -->
@@ -21,7 +21,7 @@
 	<p>Choix du compte</p>
 	<label for="choix-pays"></label>
 	<select id="choix-pays">
-		<option value="compte">Mon compte personnel<option>
+		<option value="compte">Mon compte personnel</option>
 	</select>
 </div>
 <!-- Ajout question -->
