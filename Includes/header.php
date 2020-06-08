@@ -1,10 +1,16 @@
 <?php
 	require_once("./DB/connect.php");
 	require_once("./DB/request.php");
+	$DB = ConnectDB("live_question", "127.0.0.1", "3306", "root", "");
 ?>
 <html>
 	<head>
 		<meta charset="Utf-8"/>
+		<?php
+			if($DB == null){
+				echo '<script>alert("Erreur lors de la connexion à la base de donnée");</script>';
+			}
+		?>
 		<title>LiveQuestion</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">

@@ -1,6 +1,6 @@
 <?php 
 	require_once('./DB/request.php');
-	function preTraitement(array $informations) {
+	function preTraitement(array $informations){
 		$erreurs = [];
 		if (empty($informations['user'])) {
 			$erreurs['user'] = 'Veuillez saisir un nom d\'utilisateur';
@@ -21,5 +21,8 @@
 				'succes' => true,
 			];
 		}
+	}
+	function traitement(array $informations){
+		
 	}
 ?>
