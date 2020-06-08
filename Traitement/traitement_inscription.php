@@ -13,12 +13,12 @@
 		}
 		if (!empty($erreurs)) {
 			return [
-				'succes' => false,
+				'success' => false,
 				'erreurs' => $erreurs,
 			];
 		}else{
 			return [
-				'succes' => true,
+				'success' => true,
 			];
 		}
 	}
