@@ -7,8 +7,6 @@
 		Request(livequestion, "INSERT user FROM utilisateur",$pseudo_utilisateur)
 		Request(livequestion, "INSERT email FROM utilisateur",$email_utilisateur)
 		Request(livequestion, "INSERT mdp FROM utilisateur",$mdp_utilisateur)
- }
-
 	}
 ?>
 	<main>
