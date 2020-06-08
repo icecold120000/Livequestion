@@ -16,6 +16,7 @@
 					<label for="nom">Nom de l'utilisateur:</label>				
 					<input type="text" name="user" id="nom" placeholder="Veuillez saisir votre utilisateur" />
 					<?php
+						var_dump($traitement);
 						if (isset($traitement['erreurs']['user'])) {
 							echo "<span class='erreur'>".$traitement['erreurs']['user']."</span>";
 						}

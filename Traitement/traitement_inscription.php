@@ -5,7 +5,7 @@
 		if (empty($informations['user'])) {
 			$erreurs['user'] = 'Veuillez saisir un nom d\'utilisateur';
 		}
-		if (empty($informations['email'])) {
+		if (isset($informations['email']) && empty($informations['email'])) {
 			$erreurs['email'] = 'Veuillez saisir votre email';
 		}
 		if (empty($informations['mdp'])) {
