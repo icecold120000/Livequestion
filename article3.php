@@ -5,8 +5,10 @@
 <!-- Menu -->
 <div class="black">
 	<div>
-		<img src="Contents/logopage.png"><a href="" class="menu">Répondre aux questions</a>
-		<a href="" class="menu">Communauté</a><a href="index.php" class="menu">Article 1</a>
+		<img src="Contents/logopage.png">
+		<a href="" class="menu">Répondre aux questions</a>
+		<a href="" class="menu">Communauté</a>
+		<a href="index.php" class="menu">Article 1</a>
 		<a href="index2.php" class="menu">Article 2</a>
 		<a href="index3" class="menu">Article 3</a>
 	</div>
@@ -20,7 +22,7 @@
 					<img class="CommentIcon" src="Contents/Upload_Profile/persona3.jpg">
 				</div>
 				<div class="commentp">
-					<p><strong>Praesent vitae velit tristique old alos</strong></p>
+					<p>Praesent vitae velit tristique old alos</p>
 					<p>Ned ut perspiciatias unde omnis ise natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
 					<p>"Proin vel dolor dictum, congue tellus at, lobortis neque"</p>
 				</div>
