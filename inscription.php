@@ -4,13 +4,18 @@
 	
 	if (!empty($_POST)) {
 		$traitement = preTraitement($_POST);
+		Request(livequestion, "INSERT user FROM utilisateur",$pseudo_utilisateur)
+		Request(livequestion, "INSERT email FROM utilisateur",$email_utilisateur)
+		Request(livequestion, "INSERT mdp FROM utilisateur",$mdp_utilisateur)
+ }
+
 	}
 ?>
 	<main>
 		<div class="retour">
 			<a href="index.php"><button class="btn btn-success">Retourner à la page d'acceuil</button></a>
 		</div>
-		<form action="" method="POST">
+		<form action="#" method="POST">
 			<div class="bordure">
 				<div class="saisie">
 					<label for="nom">Nom de l'utilisateur:</label>				
