@@ -8,7 +8,7 @@
 		<img src="Contents/logopage.png">
 		<a href="" class="menu">Répondre aux questions</a>
 		<a href="" class="menu">Communauté</a>
-		<a href="article.php" class="menu">Article 1</a>
+		<a href="article1.php" class="menu">Article 1</a>
 		<a href="article2.php" class="menu">Article 2</a>
 		<a href="article3.php" class="menu">Article 3</a>
 	</div>
@@ -39,3 +39,6 @@
 		<img src="Contents/graphique.png" class="graphique">
 	</div>
 </div>
+<?php
+	require_once("Includes/footer.php");
+?>
