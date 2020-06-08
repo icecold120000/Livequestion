@@ -3,7 +3,7 @@
 	require_once('./Traitement/traitement_inscription.php');
 	
 	if (!empty($_POST)) {
-		$traitement = preTraitement($_POST);
+		$traitement = PreTraitement($_POST);
 		if($traitement['success']){
 			Request($DB, "INSERT user FROM utilisateur",$pseudo_utilisateur);
 			Request($DB, "INSERT email FROM utilisateur",$email_utilisateur);
