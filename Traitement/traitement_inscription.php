@@ -6,7 +6,7 @@
 			$erreurs['user'] = 'Veuillez saisir un nom d\'utilisateur';
 		}
 		if (empty($informations['email'])) {
-			$erreurs['email'] = 'Veuillez saisir votre émail';
+			$erreurs['email'] = 'Veuillez saisir votre email';
 		}
 		if (empty($informations['mdp'])) {
 			$erreurs['mdp'] = 'Veuillez saisir votre mot de passe';
@@ -16,9 +16,10 @@
 				'succes' => false,
 				'erreurs' => $erreurs,
 			];
+		}else{
+			return [
+				'succes' => true,
+			];
 		}
-		return [
-			'succes' => true,
-		];
 	}
 ?>
