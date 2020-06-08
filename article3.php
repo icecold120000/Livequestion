@@ -41,3 +41,4 @@
 </div>
 <?php
 	require_once("Includes/footer.php");
+?>
