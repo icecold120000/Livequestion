@@ -4,7 +4,12 @@
 ?>
 <!-- Menu -->
 <div class="bloc">
-	<img src="Contents/logopage.png"><a href="" class="menu">Répondre</a> <a href="" class="menu">Poser une question</a> <a href="" class="menu">Communauté</a> <a href="index.php" class="menu">Article 1</a> <a href="index2.php" class="menu">Article 2</a> <a href="index3" class="menu">Article 3</a> <div class="profil"><a class="points">776 points</a> <img src="Contents/bleu.jpg" class="image-utilisateur"></div>
+	<img src="Contents/logopage.png"><a href="" class="menu">Répondre</a>
+	<a href="" class="menu">Poser une question</a> <a href="" class="menu">Communauté</a>
+	<a href="index.php" class="menu">Article 1</a> 
+	<a href="index2.php" class="menu">Article 2</a>
+	<a href="index3" class="menu">Article 3</a> <div class="profil">
+	<a class="points">776 points</a><img src="Contents/bleu.jpg" class="image-utilisateur"></div>
 </div>
 <br>
 <!-- Compte utilisateur -->

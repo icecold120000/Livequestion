@@ -5,7 +5,10 @@
 <!-- Menu -->
 <div class="black">
 	<div>
-		<img src="Contents/logopage.png"><a href="" class="menu">Répondre aux questions</a><a href="" class="menu">Communauté</a> <a href="index.php" class="menu">Article 1</a> <a href="index2.php" class="menu">Article 2</a> <a href="index3" class="menu">Article 3</a>
+		<img src="Contents/logopage.png"><a href="" class="menu">Répondre aux questions</a>
+		<a href="" class="menu">Communauté</a><a href="index.php" class="menu">Article 1</a>
+		<a href="index2.php" class="menu">Article 2</a>
+		<a href="index3" class="menu">Article 3</a>
 	</div>
 	<!-- Profil -->
 	<p class="texte"><img src="Contents/Upload_Profile/persona1.jpg" class="profile" />France, Nourriture, alimentation, 1 critère de ciblage [100 avis sur 100 attendus | Terminé]</p>
