@@ -8,12 +8,12 @@
 	<a href="" class="menu">Répondre</a>
 	<a href="" class="menu">Poser une question</a>
 	<a href="" class="menu">Communauté</a>
-	<a href="index.php" class="menu">Article 1</a>
-	<a href="index2.php" class="menu">Article 2</a>
-	<a href="index3" class="menu">Article 3</a>
+	<a href="article1.php" class="menu">Article 1</a>
+	<a href="article2.php" class="menu">Article 2</a>
+	<a href="article3.php" class="menu">Article 3</a>
 	<div class="profil"
 		<a class="points">776 points</a>
-		<img src="Contents/bleu.jpg" class="image-utilisateur"
+		<img src="Contents/bleu.jpg" class="image-utilisateur">
 	</div>
 </div>
 <!-- Compte utilisateur -->
@@ -21,7 +21,7 @@
 	<p>Choix du compte</p>
 	<label for="choix-pays"></label>
 	<select id="choix-pays">
-		<option value="compte">Mon compte personnel<option>
+		<option value="compte">Mon compte personnel</option>
 	</select>
 </div>
 <!-- Ajout question -->
