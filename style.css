@@ -428,6 +428,11 @@ h2 {
 .persona1 {
 	height: 5%;
 }
+
+.imgs {
+	margin-left: auto;
+	margin-right: auto;
+}
 /*Commentaires*/
 .comments1 {
 	padding: 20px;

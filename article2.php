@@ -68,9 +68,11 @@
 <!-- Ajout image -->
 <label for="NombreReponseAttentues">Nombre de réponse attendues</label>
 <input type="text" name="reponses" aria-label="reponses" />
-<img class="image" src="Contents/folder.png"/>
-<img class="image" src="Contents/folder.png"/>
-<img class="image" src="Contents/folder.png"/>
+<div class="imgs">
+	<img class="image" src="Contents/folder.png"/>
+	<img class="image" src="Contents/folder.png"/>
+	<img class="image" src="Contents/folder.png"/>
+</div>
 <p>Coût de la question : 0 points</p>
 <a href="" class="choix">Annuler</a>
 <a href="" class="choix">Valider</a>
