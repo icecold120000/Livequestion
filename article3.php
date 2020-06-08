@@ -39,3 +39,5 @@
 		<img src="Contents/graphique.png" class="graphique">
 	</div>
 </div>
+<?php
+	require_once("Includes/footer.php");
