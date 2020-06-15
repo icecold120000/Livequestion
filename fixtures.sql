@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1
--- http://www.phpmyadmin.net
+-- version 4.8.0.1
+-- https://www.phpmyadmin.net/
 --
--- Client :  localhost
--- Généré le :  Lun 27 Avril 2020 à 13:03
--- Version du serveur :  5.7.11
--- Version de PHP :  7.0.3
+-- Hôte : 127.0.0.1
+-- Généré le :  lun. 15 juin 2020 à 12:24
+-- Version du serveur :  5.7.17
+-- Version de PHP :  7.1.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `livequestion`
 --
-CREATE DATABASE IF NOT EXISTS `livequestion` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-USE `livequestion`;
 
 -- --------------------------------------------------------
 
@@ -56,7 +56,7 @@ CREATE TABLE `date` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `date`
+-- Déchargement des données de la table `date`
 --
 
 INSERT INTO `date` (`id_date`, `creation_date`) VALUES
@@ -87,7 +87,7 @@ CREATE TABLE `question` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
 --
--- Contenu de la table `question`
+-- Déchargement des données de la table `question`
 --
 
 INSERT INTO `question` (`id_question`, `titre_question`, `id_date`, `id_utilisateur`, `nombre_like`) VALUES
@@ -113,7 +113,7 @@ CREATE TABLE `reponse` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
 --
--- Contenu de la table `reponse`
+-- Déchargement des données de la table `reponse`
 --
 
 INSERT INTO `reponse` (`id_reponse`, `contenu_reponse`, `id_date`, `id_utilisateur`, `id_question`) VALUES
@@ -142,7 +142,7 @@ CREATE TABLE `utilisateur` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
 --
--- Contenu de la table `utilisateur`
+-- Déchargement des données de la table `utilisateur`
 --
 
 INSERT INTO `utilisateur` (`id_utilisateur`, `pseudo_utilisateur`, `mdp_utilisateur`, `mail_utilisateur`, `genre_utilisateur`, `img_utilisateur`, `id_date`, `role_utilisateur`) VALUES
@@ -155,7 +155,7 @@ INSERT INTO `utilisateur` (`id_utilisateur`, `pseudo_utilisateur`, `mdp_utilisat
 (10, 'nniovyoiblbb', 'hoonolbub', 'hhbibnib.naupco@byc.com', '1', 'DefaultH.jpg', 1, 2);
 
 --
--- Index pour les tables exportées
+-- Index pour les tables déchargées
 --
 
 --
@@ -200,11 +200,10 @@ ALTER TABLE `reponse`
 ALTER TABLE `utilisateur`
   ADD PRIMARY KEY (`id_utilisateur`),
   ADD UNIQUE KEY `pseudo_utilisateur` (`pseudo_utilisateur`),
-  ADD UNIQUE KEY `img_utilisateur` (`img_utilisateur`),
   ADD KEY `UTIFK` (`id_date`);
 
 --
--- AUTO_INCREMENT pour les tables exportées
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
@@ -212,28 +211,33 @@ ALTER TABLE `utilisateur`
 --
 ALTER TABLE `categorie`
   MODIFY `id_categorie` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT pour la table `date`
 --
 ALTER TABLE `date`
   MODIFY `id_date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
 --
 -- AUTO_INCREMENT pour la table `question`
 --
 ALTER TABLE `question`
   MODIFY `id_question` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT pour la table `reponse`
 --
 ALTER TABLE `reponse`
   MODIFY `id_reponse` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT pour la table `utilisateur`
 --
 ALTER TABLE `utilisateur`
   MODIFY `id_utilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
 --
--- Contraintes pour les tables exportées
+-- Contraintes pour les tables déchargées
 --
 
 --
@@ -263,6 +267,7 @@ ALTER TABLE `reponse`
 --
 ALTER TABLE `utilisateur`
   ADD CONSTRAINT `UTIFK` FOREIGN KEY (`id_date`) REFERENCES `date` (`id_date`) ON UPDATE CASCADE;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
