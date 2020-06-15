@@ -16,7 +16,7 @@
 			<div class="bordure">
 				<div class="saisie">
 					<label for="nom">Nom de l'utilisateur:</label>				
-					<input type="text" name="user" id="nom" placeholder="Veuillez saisir votre utilisateur:" />
+					<input type="text" name="user" id="nom" placeholder="Veuillez saisir votre nom d'utilisateur" />
 					<?php
 						if (isset($traitement['erreurs']['user'])) {
 							echo "<span class='erreur'>".$traitement['erreurs']['user']."</span>";
@@ -25,7 +25,7 @@
 				</div>
 				<div class="saisie">
 					<label for="email">Email:</label>
-					<input type="text" name="email" id="email" placeholder="Veuillez saisir votre émail:" />
+					<input type="text" name="email" id="email" placeholder="Veuillez saisir votre email" />
 					<?php
 						if (isset($traitement['erreurs']['email'])) {
 							echo "<span class='erreur'>".$traitement['erreurs']['email']."</span>";
@@ -41,7 +41,7 @@
 				</div>
 				<div class="saisie">
 					<label for="mdp">Mot de passe:</label>
-					<input type="password" name="mdp" id="mdp" placeholder="Veuillez saisir votre mot de passe:" />
+					<input type="password" name="mdp" id="mdp" placeholder="Veuillez saisir votre mot de passe" />
 					<?php
 						if (isset($traitement['erreurs']['mdp'])) {
 							echo "<span class='erreur'>".$traitement['erreurs']['mdp']."</span>";
