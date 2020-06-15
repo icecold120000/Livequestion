@@ -1,7 +1,6 @@
 <?php 
 	require_once('./Includes/header.php');
 	require_once('./Traitement/traitement_inscription.php');
-	var_dump($_POST);
 	if (!empty($_POST)) {
 		$traitement = preTraitement($_POST);
 		if($traitement['success']){
@@ -13,7 +12,7 @@
 			Request($DB, "INSERT :email FROM utilisateur", $email);
 			Request($DB, "INSERT :mdp FROM utilisateur", $mdp);
 			*/
-			Request($DB, "INSERT :user,:mdp,:email,:genre INTO utilisateur", $_POST);
+			Request($DB, "INSERT INTO `utilisateur`(`pseudo_utilisateur`, `mdp_utilisateur`, `mail_utilisateur`, `genre_utilisateur`, `id_date`, `role_utilisateur`) VALUES (:user, :mdp, :email, :genre, 1, 0)", $_POST);
 		}
 	}
 ?>
@@ -43,9 +42,9 @@
 				</div>
 				<div class="saisie">
 					<label for="genre">Genre:</label>
-					<select id="genre">
-						<option value="valeur1" selected>Homme</option>
-						<option value="valeur2">Femme</option>
+					<select id="genre" name="genre">
+						<option value="1" selected>Homme</option>
+						<option value="2">Femme</option>
 					</select>
 				</div>
 				<div class="saisie">
