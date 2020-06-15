@@ -1,7 +1,7 @@
 <?php
 	require_once("./DB/connect.php");
 	require_once("./DB/request.php");
-	$DB = ConnectDB("live_question", "127.0.0.1", "3306", "root", "");
+	$DB = ConnectDB("livequestion", "127.0.0.1", "3306", "root", "");
 ?>
 <html>
 	<head>
