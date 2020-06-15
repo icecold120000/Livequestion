@@ -4,14 +4,6 @@
 	if (!empty($_POST)) {
 		$traitement = preTraitement($_POST);
 		if($traitement['success']){
-			/*
-			$user = ['user' => $_POST['user']];
-			$email = ['email' => $_POST['email']];
-			$mdp = ['mdp' => $_POST['mdp']];
-			Request($DB, "INSERT :user FROM utilisateur", $user);
-			Request($DB, "INSERT :email FROM utilisateur", $email);
-			Request($DB, "INSERT :mdp FROM utilisateur", $mdp);
-			*/
 			Request($DB, "INSERT INTO `utilisateur`(`pseudo_utilisateur`, `mdp_utilisateur`, `mail_utilisateur`, `genre_utilisateur`, `id_date`, `role_utilisateur`) VALUES (:user, :mdp, :email, :genre, 1, 0)", $_POST);
 		}
 	}
