@@ -1,13 +1,19 @@
 <?php 
 	require_once('./Includes/header.php');
 	require_once('./Traitement/traitement_inscription.php');
-	
+	var_dump($_POST);
 	if (!empty($_POST)) {
 		$traitement = preTraitement($_POST);
 		if($traitement['success']){
-			Request($DB, "INSERT INTO user FROM utilisateur",$_POST['pseudo']);
-			Request($DB, "INSERT INTO email FROM utilisateur",$_POST['email']);
-			Request($DB, "INSERT INTO mdp FROM utilisateur",$_POST['mdp']);			
+			/*
+			$user = ['user' => $_POST['user']];
+			$email = ['email' => $_POST['email']];
+			$mdp = ['mdp' => $_POST['mdp']];
+			Request($DB, "INSERT :user FROM utilisateur", $user);
+			Request($DB, "INSERT :email FROM utilisateur", $email);
+			Request($DB, "INSERT :mdp FROM utilisateur", $mdp);
+			*/
+			Request($DB, "INSERT :user,:mdp,:email,:genre INTO utilisateur", $_POST);
 		}
 	}
 ?>
