@@ -71,15 +71,15 @@
 			</div>
 			<div class="container-fluid">
 				<div class="ent">
-					<a href="#"><button class="btn btn-light"><img src="./Contents/marque1.jpg"><span>Kyan boards</span></button></a>
-					<a href="#"><button class="btn btn-light"><img src="./Contents/marque2.jpg"><span>Atica</span></button></a>
-					<a href="#"><button class="btn btn-light"><img src="./Contents/marque3.jpg"><span>Treva</span></button></a>
-					<a href="#"><button class="btn btn-light"><img src="./Contents/marque4.jpg"><span>Kanba</span></button></a>
+					<a href=""><button class="btn btn-light"><img src="./Contents/marque1.jpg"><span>Kyan boards</span></button></a>
+					<a href=""><button class="btn btn-light"><img src="./Contents/marque2.jpg"><span>Atica</span></button></a>
+					<a href=""><button class="btn btn-light"><img src="./Contents/marque3.jpg"><span>Treva</span></button></a>
+					<a href=""><button class="btn btn-light"><img src="./Contents/marque4.jpg"><span>Kanba</span></button></a>
 				</div>
 				<div class="ent">
-					<a href="#"><button class="btn btn-light"><img src="./Contents/marque5.jpg"><span>Triv Forms</span></button></a>
-					<a href="#"><button class="btn btn-light"><img src="./Contents/marque7.jpg"><span>Aven</span></button></a>
-					<a href="#"><button class="btn btn-light"><img src="./Contents/marque6.jpg"><span>Utosia</span></button></a>
+					<a href=""><button class="btn btn-light"><img src="./Contents/marque5.jpg"><span>Triv Forms</span></button></a>
+					<a href=""><button class="btn btn-light"><img src="./Contents/marque7.jpg"><span>Aven</span></button></a>
+					<a href=""><button class="btn btn-light"><img src="./Contents/marque6.jpg"><span>Utosia</span></button></a>
 				</div>
 			</div>
 		</section>
