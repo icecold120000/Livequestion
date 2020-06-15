@@ -5,9 +5,9 @@
 	if (!empty($_POST)) {
 		$traitement = preTraitement($_POST);
 		if($traitement['success']){
-			Request($DB, "INSERT user FROM utilisateur",$_POST['pseudo']);
-			Request($DB, "INSERT email FROM utilisateur",$_POST['email']);
-			Request($DB, "INSERT mdp FROM utilisateur",$_POST['mdp']);			
+			Request($DB, "INSERT :user FROM utilisateur",$_POST['pseudo']);
+			Request($DB, "INSERT :email FROM utilisateur",$_POST['email']);
+			Request($DB, "INSERT :mdp FROM utilisateur",$_POST['mdp']);			
 		}
 	}
 ?>
