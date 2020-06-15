@@ -1,10 +1,9 @@
-<?php 
+<?php
 	require_once('./Includes/header.php');
 	require_once('./Traitement/traitement_inscription.php');
 	
 	if (!empty($_POST)) {
 		$traitement = preTraitement($_POST);
-		var_dump($_POST);
 		if($traitement['success']){
 		
 			Request($DB, "INSERT user FROM utilisateur",$_POST['pseudo']);
