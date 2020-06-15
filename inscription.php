@@ -5,7 +5,7 @@
 	if (!empty($_POST)) {
 		$traitement = preTraitement($_POST);
 		if($traitement['success']){
-			Request($DB, "INSERT :user INTO utilisateur",$_POST['pseudo']);
+			Request($DB, "INSERT :user INTO utilisateur",$_POST['user']);
 			Request($DB, "INSERT :email INTO utilisateur",$_POST['email']);
 			Request($DB, "INSERT :genre INTO utilisateur",$_POST['genre']);
 			Request($DB, "INSERT :mdp INTO utilisateur",$_POST['mdp']);			
@@ -58,7 +58,7 @@
 					?>
 				</div>
 				<div class="submit">
-					<input type="submit" value="Valider" class="btn btn-primary">
+					<input type="submit" value="S'inscrire" class="btn btn-primary">
 				</div>
 			</div>
 		</form>
