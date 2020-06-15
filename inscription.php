@@ -1,19 +1,14 @@
 <?php 
 	require_once('./Includes/header.php');
 	require_once('./Traitement/traitement_inscription.php');
-	var_dump($_POST);
+	
 	if (!empty($_POST)) {
 		$traitement = preTraitement($_POST);
 		if($traitement['success']){
-			/*
-			$user = ['user' => $_POST['user']];
-			$email = ['email' => $_POST['email']];
-			$mdp = ['mdp' => $_POST['mdp']];
-			Request($DB, "INSERT :user FROM utilisateur", $user);
-			Request($DB, "INSERT :email FROM utilisateur", $email);
-			Request($DB, "INSERT :mdp FROM utilisateur", $mdp);
-			*/
-			Request($DB, "INSERT :user,:mdp,:email,:genre INTO utilisateur", $_POST);
+			Request($DB, "INSERT :user INTO utilisateur",$_POST['pseudo']);
+			Request($DB, "INSERT :email INTO utilisateur",$_POST['email']);
+			Request($DB, "INSERT :genre INTO utilisateur",$_POST['genre']);
+			Request($DB, "INSERT :mdp INTO utilisateur",$_POST['mdp']);			
 		}
 	}
 ?>
@@ -43,10 +38,15 @@
 				</div>
 				<div class="saisie">
 					<label for="genre">Genre:</label>
-					<select id="genre">
-						<option value="valeur1" selected>Homme</option>
+					<select id="genre" name="genre">
+						<option value="valeur1">Homme</option>
 						<option value="valeur2">Femme</option>
 					</select>
+					<?php
+						if (isset($traitement['erreurs']['genre'])) {
+							echo "<span class='erreur'>".$traitement['erreurs']['genre']."</span>";
+						}
+					?>
 				</div>
 				<div class="saisie">
 					<label for="mdp">Mot de passe:</label>
