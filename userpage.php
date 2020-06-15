@@ -1,5 +1,15 @@
 ﻿<?php
 	require_once('./Includes/header.php');
+	require_once('./Traitement/traitement_inscription.php');
+	
+	if (!empty($_POST)) {
+		$traitement = preTraitement($_POST);
+		if($traitement['success']){
+			Request($DB, "UPDATE :nameuser INTO utilisateur",$_POST['nameuser']);
+			Request($DB, "UPDATE :emailuser INTO utilisateur",$_POST['emailuser']);
+			Request($DB, "UPDATE :passworduser INTO utilisateur",$_POST['passworduser']);			
+		}
+	}
 ?>
 	<section id="user" class="container-fluid">
 		<div class="container-fluid">
@@ -28,14 +38,6 @@
 				</div>
 				<div>
 					<input type="submit" name="submit" placeholder="Valider" class="bouttonsubmit">
-				</div>
-				<div id="mdp">
-					<div>
-						<p>Souhaitez-vous changer de mot de passe ?</p>
-					</div>
-					<div>
-						<p>* = Obligatoire </p>
-					</div>
 				</div>
 			</div>
 		</div>
