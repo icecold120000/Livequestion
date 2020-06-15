@@ -31,7 +31,7 @@
 					?>
 				</div>
 				<div class="submit">
-					<input type="submit" value="Valider" class="btn btn-primary">
+					<input type="submit" value="Se connecter" class="btn btn-primary">
 				</div>
 			</div>
 		</form>
