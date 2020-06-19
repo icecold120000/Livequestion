@@ -25,7 +25,7 @@
 			];
 		}
 	}
-	function Traitement(array $informations){
+	function PostTraitement(array $informations){
 		
 	}
 ?>
