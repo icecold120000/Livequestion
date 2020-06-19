@@ -42,8 +42,8 @@
 				<div class="saisie">
 					<label for="genre">Genre:</label>
 					<select id="genre" name="genre">
-						<option value="valeur1">Homme</option>
-						<option value="valeur2">Femme</option>
+						<option value="M">Homme</option>
+						<option value="F">Femme</option>
 					</select>
 					<?php
 						if (isset($traitement['erreurs']['genre'])) {

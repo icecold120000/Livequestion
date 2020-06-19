@@ -8,6 +8,9 @@
 		if (isset($informations['email']) && empty($informations['email'])) {
 			$erreurs['email'] = 'Veuillez saisir votre email';
 		}
+		if (isset($informations['genre']) && ($informations['genre'] != 'M' && $informations['genre'] != 'F')) {
+			$erreurs['genre'] = 'Page corrompue veuillez recharger la page';
+		}
 		if (empty($informations['mdp'])) {
 			$erreurs['mdp'] = 'Veuillez saisir votre mot de passe';
 		}
