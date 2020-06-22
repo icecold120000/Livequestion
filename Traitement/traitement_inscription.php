@@ -35,7 +35,9 @@
 		}
 		else{
 			$req = Request($db, "SELECT * FROM `utilisateur` WHERE `pseudo_utilisateur` = :user", ['user'=>$informations['user']])->fetch();
-			var_dump($req);
+			if(!empty($req)){
+				$erreurs['user'] = 'nom d\'utilisateur déjà existant';
+			};
 		}
 		if (!empty($erreurs)) {
 			return [

@@ -6,12 +6,12 @@
 		$traitement = preTraitement($_POST);
 		if($traitement['success']){
 			if($DB != null){
-				$testReq = Traitement($DB, $_POST);
+				$testReq = Traitement($DB, $_POST)->errorInfo();
 			}
 			else{
 				$testReq = false;
 			}
-			if(!$testReq){
+			if(!empty($testReq[1])){
 				$traitement = PostTraitement($DB, $_POST);
 			}
 		}
@@ -34,7 +34,7 @@
 				</div>
 				<div class="saisie">
 					<label for="email">Email:</label>
-					<input type="text" name="email" id="email" placeholder="Veuillez saisir votre email:" />
+					<input type="Email" name="email" id="email" placeholder="Veuillez saisir votre email:" />
 					<?php
 						if (isset($traitement['erreurs']['email'])) {
 							echo "<span class='erreur'>".$traitement['erreurs']['email']."</span>";
