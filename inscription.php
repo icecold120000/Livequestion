@@ -37,7 +37,7 @@
 				</div>
 				<div class="saisie">
 					<label for="email">Email:</label>
-					<input type="text" name="email" id="email" placeholder="Veuillez saisir votre émail:" />
+					<input type="text" name="email" id="email" placeholder="Veuillez saisir votre email:" />
 					<?php
 						if (isset($traitement['erreurs']['email'])) {
 							echo "<span class='erreur'>".$traitement['erreurs']['email']."</span>";
