@@ -143,7 +143,30 @@ form {
 
 
 /*CSS de la Partie 3 du site*/
+#part3
+{
+	background-color: #E6E6E6;
+}
 
+#part3 h1
+{
+	text-align: center;
+	font-weight: bold;
+}
+
+#part3 p
+{
+	text-align: center;
+}
+
+#part3 img
+{
+	width: 75%;
+	height: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 
 /*CSS de la Partie 4 du site*/
 
