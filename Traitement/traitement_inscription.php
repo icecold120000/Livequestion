@@ -29,4 +29,23 @@
 		$req = Request($db, "INSERT INTO `utilisateur`(`pseudo_utilisateur`, `mdp_utilisateur`, `mail_utilisateur`, `genre_utilisateur`, `id_date`, `role_utilisateur`) VALUES (:user, :mdp, :email, :genre, 1, 0)", $informations);
 		return $req;
 	}
+	function PostTraitement($db, array $informations){
+		if($db == null){
+			$erreurs['database'] = 'Database non initialisée contactez un administrateur';
+		}
+		else{
+			$req = Request($db, "SELECT * FROM `utilisateur` WHERE `pseudo_utilisateur` = :user", ['user'=>$informations['user']])->fetch();
+			var_dump($req);
+		}
+		if (!empty($erreurs)) {
+			return [
+				'success' => false,
+				'erreurs' => $erreurs,
+			];
+		}else{
+			return [
+				'success' => true,
+			];
+		}
+	}
 ?>

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 	require_once('./Includes/header.php');
 	require_once('./Traitement/traitement_userpage.php');
 	
