@@ -25,7 +25,8 @@
 			];
 		}
 	}
-	function PostTraitement(array $informations){
-		
+	function Traitement(PDO $db, array $informations){
+		$req = Request($db, "INSERT INTO `utilisateur`(`pseudo_utilisateur`, `mdp_utilisateur`, `mail_utilisateur`, `genre_utilisateur`, `id_date`, `role_utilisateur`) VALUES (:user, :mdp, :email, :genre, 1, 0)", $informations);
+		return $req;
 	}
 ?>
