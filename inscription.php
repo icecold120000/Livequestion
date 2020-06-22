@@ -9,7 +9,7 @@
 				$testReq = Traitement($DB, $_POST)->errorInfo();
 			}
 			else{
-				$testReq = false;
+				$testReq = [1 => true];
 			}
 			if(!empty($testReq[1])){
 				$traitement = PostTraitement($DB, $_POST);
