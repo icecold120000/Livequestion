@@ -168,6 +168,19 @@ form {
 	display: block;
 }
 
+#part3 .liens
+{
+	background-color: #ec008c;
+	color: #fff;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	border-radius: 18px;
+	font-weight: bold;
+}
+
 /*CSS de la Partie 4 du site*/
 
 #part4{
