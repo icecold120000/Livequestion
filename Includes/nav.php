@@ -12,10 +12,10 @@
 				<a class="nav-link" href="admin.php">Link 2<i class="fas fa-caret-down"></i></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Link 3<i class="fas fa-caret-down"></i></a>
+				<a class="nav-link" href="">Link 3<i class="fas fa-caret-down"></i></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Link 4<i class="fas fa-caret-down"></i></a>
+				<a class="nav-link" href="">Link 4<i class="fas fa-caret-down"></i></a>
 			</li>
 		</ul>
 	</div>
