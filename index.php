@@ -56,7 +56,12 @@
 			</div>
 		</section>
 		<!-- Partie 3 de la page d'accueil-->
-
+		<section id="part3">
+		<h1>Aenean magna odio</h1>
+		<p>Sed ut unde omnis iste natus error sit voluptatem</p>
+		<p>accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+		<img src="./Contents/part3.png">
+		</section>
 		<!-- Partie 4 du page d'accueil -->
 		<section id="part4">
 			<img src="./Contents/iplay.png">
