@@ -10,12 +10,12 @@
 				<div class="form-group">
 					<label class="info" for="question">Soumettre une Question:</label>
 					<select class="custom-select">
-						<option>Cinéma</option>
+						<option>CinÃ©ma</option>
 						<option>Maths</option> 
-						<option>Français</option> 
+						<option>FranÃ§ais</option> 
 						<option>Technologie</option> 
 					</select>
-					<textarea class="form-control" cols="50" rows="20" placeholder="Veuiller écrire votre question."></textarea>
+					<textarea class="form-control" cols="50" rows="20" placeholder="Veuiller Ã©crire votre question."></textarea>
 					<button type="submit" class="btn btn-success">Valider</button>
 				</div>
 			</form>

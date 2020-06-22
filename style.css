@@ -315,6 +315,10 @@ footer
 	margin-bottom:20px;
 }
 
+.success{
+	color:#00FF00;
+}
+
 /*CSS de la page utilisateur*/
 
 #user {
@@ -492,7 +496,7 @@ h2 {
 .bloc {
 	background-position: right top;
 	background-color: #FF007F;
-	font-color: pink;
+	color: pink;
 }
 
 .img {

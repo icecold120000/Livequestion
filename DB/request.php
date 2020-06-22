@@ -6,7 +6,7 @@
 			foreach($params as $cle => &$param){
 				$req->bindParam($cle, $param);
 			}
-			$req = $req->execute();
+			$req->execute();
 			return $req;
 		}
 	}

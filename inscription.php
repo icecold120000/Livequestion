@@ -6,20 +6,20 @@
 		$traitement = preTraitement($_POST);
 		if($traitement['success']){
 			if($DB != null){
-				$testReq = Traitement($DB, $_POST);
+				$testReq = Traitement($DB, $_POST)->errorInfo();
 			}
 			else{
 				$testReq = false;
 			}
-			if(!$testReq){
-				echo "Erreur";
+			if(!empty($testReq[1])){
+				$traitement = PostTraitement($DB, $_POST);
 			}
 		}
 	}
 ?>
 	<main>
 		<div class="retour">
-			<a href="index.php"><button class="btn btn-success">Retourner à la page d'acceuil</button></a>
+			<a href="./"><button class="btn btn-success">Retourner à la page d'acceuil</button></a>
 		</div>
 		<form action="" method="POST">
 			<div class="bordure">
@@ -34,7 +34,7 @@
 				</div>
 				<div class="saisie">
 					<label for="email">Email:</label>
-					<input type="text" name="email" id="email" placeholder="Veuillez saisir votre email:" />
+					<input type="Email" name="email" id="email" placeholder="Veuillez saisir votre email:" />
 					<?php
 						if (isset($traitement['erreurs']['email'])) {
 							echo "<span class='erreur'>".$traitement['erreurs']['email']."</span>";
@@ -64,11 +64,21 @@
 				</div>
 				<div class="submit">
 					<input type="submit" value="S'inscrire" class="btn btn-primary">
+					<?php
+						if (isset($traitement['erreurs']['database'])) {
+							echo "<span class='erreur'>".$traitement['erreurs']['database']."</span>";
+						}
+						else{
+							if(isset($traitement) && $traitement['success']){
+								echo "<span class='success'>Inscription réussi</span>";
+							}
+						}
+					?>
 				</div>
 			</div>
 		</form>
 		<div class="more">
-			<p>Déjà inscrit? <a href="formconnexion.php">Appuyer ici pour vous connecter.</a></p>
+			<p>Déjà inscrit? <a href="formconnexion.php">Appuyez ici pour vous connecter.</a></p>
 		</div>
 	</main>
 <?php
