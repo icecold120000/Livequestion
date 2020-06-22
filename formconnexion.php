@@ -1,6 +1,6 @@
 <?php 
 	require_once('./Includes/header.php');
-	require_once('./Traitement/traitement_inscription.php');
+	require_once('./Traitement/traitement_connexion.php');
 	require_once('./DB/request.php');
 	if(!empty($_POST)){
 		$traitement = PreTraitement($_POST);
