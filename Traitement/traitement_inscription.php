@@ -5,10 +5,10 @@
 		if (empty($informations['user'])) {
 			$erreurs['user'] = 'Veuillez saisir un nom d\'utilisateur';
 		}
-		if (isset($informations['email']) && empty($informations['email'])) {
+		if (empty($informations['email'])) {
 			$erreurs['email'] = 'Veuillez saisir votre email';
 		}
-		if (isset($informations['genre']) && ($informations['genre'] != 'M' && $informations['genre'] != 'F')) {
+		if ($informations['genre'] != 'M' && $informations['genre'] != 'F') {
 			$erreurs['genre'] = 'Page corrompue veuillez recharger la page';
 		}
 		if (empty($informations['mdp'])) {

@@ -14,9 +14,6 @@
 			if(!$testReq){
 				echo "Erreur";
 			}
-			else{
-				echo "Réussi";
-			}
 		}
 	}
 ?>
