@@ -4,6 +4,15 @@
 	require_once('./DB/request.php');
 	if(!empty($_POST)){
 		$traitement = PreTraitement($_POST);
+		if($traitement['success']){
+			if($DB != null){
+				$req = Traitement($DB, $_POST);
+			}
+			else{
+				$req = null;
+			}
+			$traitement = PostTraitement($req, $_POST);
+		}
 	}
 ?>
 	<main>

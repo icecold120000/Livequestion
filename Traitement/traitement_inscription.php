@@ -19,7 +19,8 @@
 				'success' => false,
 				'erreurs' => $erreurs,
 			];
-		}else{
+		}
+		else{
 			return [
 				'success' => true,
 			];
@@ -30,7 +31,7 @@
 		return $req;
 	}
 	function PostTraitement($db, array $informations){
-		if($db == null){
+		if($db === null){
 			$erreurs['database'] = 'Database non initialisée contactez un administrateur';
 		}
 		else{
