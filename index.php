@@ -60,9 +60,9 @@
 		<h1>Aenean magna odio</h1>
 		<p>Sed ut unde omnis iste natus error sit voluptatem</p>
 		<p>accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
-		<button class="liens">Lien 1</button>
-		<button class="liens">Lien 2</button>
-		<button class="liens">Lien 3</button>
+		<center><button class="liens">Lien 1</button>
+		<button class="liens-2">Lien 2</button>
+		<button class="liens-2">Lien 3</button></center>
 		<img src="./Contents/part3.png">
 		</section>
 		<!-- Partie 4 du page d'accueil -->

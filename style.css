@@ -173,11 +173,24 @@ form {
 	background-color: #ec008c;
 	color: #fff;
 	border: none;
-	padding: 15px 32px;
+	padding: 10px 20px;
 	text-align: center;
 	text-decoration: none;
 	font-size: 16px;
-	border-radius: 18px;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+#part3 .liens-2
+{
+	background-color: #E6E6E6;
+	color: #ec008c;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	border-radius: 10px;
 	font-weight: bold;
 }
 
