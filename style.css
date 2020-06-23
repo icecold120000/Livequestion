@@ -31,9 +31,9 @@ span {
 }
 
 nav a{
-	text-decoration: none;
 	color: white;
 	font-weight: bold;
+	text-decoration: none;
 }
 
 .nav-link
@@ -67,28 +67,28 @@ form {
 #part1 {
 	background-color: #1a2d34;
 	border-bottom-left-radius: 55% 90px;
-	padding-bottom: 100px;
 	border-bottom-right-radius: 55% 90px;
+	padding-bottom: 100px;
 }
 
 
 .bouton
 {
 	background-color: #ec008c;
-	color: #fff;
 	border: none;
+	border-radius: 18px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 16px;
-	border-radius: 18px;
-	font-weight: bold;
 
 }
 
 #part1 h1{
-	font-size:30px;
 	color: #fff;
+	font-size:30px;
 	font-weight: bold;
 }
 
@@ -102,10 +102,10 @@ form {
 .screenshot
 {
 	float: right;
-	width: 400px;
 	height: 250px;
 	position:relative;
 	right:70px;
+	width: 400px;
 
 }
 
@@ -113,8 +113,8 @@ form {
 /*CSS de la partie 2*/
 
 #maindiv {
-	text-align: center;
 	padding-bottom: 50px;
+	text-align: center;
 }
 
 .explications
@@ -150,8 +150,8 @@ form {
 
 #part3 h1
 {
-	text-align: center;
 	font-weight: bold;
+	text-align: center;
 }
 
 #part3 p
@@ -161,38 +161,38 @@ form {
 
 #part3 img
 {
-	width: 75%;
+	display: block;
 	height: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
 	margin-top: 5%;
+	width: 75%;
 }
 
 #part3 .liens
 {
 	background-color: #ec008c;
-	color: #fff;
 	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
 	padding: 10px 20px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 16px;
-	border-radius: 5px;
-	font-weight: bold;
 }
 
 #part3 .liens-2
 {
 	background-color: #E6E6E6;
-	color: #ec008c;
 	border: none;
+	border-radius: 5px;
+	color: #ec008c;
+	font-size: 16px;
+	font-weight: bold;
 	padding: 10px 20px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 16px;
-	border-radius: 5px;
-	font-weight: bold;
 }
 
 /*CSS de la Partie 4 du site*/
@@ -219,11 +219,11 @@ form {
 
 #part5{
 	background:#D00070;
-	padding: 40px 0 40px 0; 
-	text-align: center;
-	color: white;
 	border-bottom-left-radius: 50% 90px;
 	border-bottom-right-radius: 50% 90px;
+	color: white;
+	padding: 40px 0 40px 0; 
+	text-align: center;
 }
 
 #part5 img{
@@ -255,10 +255,10 @@ form {
 /*CSS de la Section FAQ du site*/
 
 #faq {
-	text-align: center;
-	padding: 10%;
 	border-bottom-left-radius: 50% 90px;
 	border-bottom-right-radius: 50% 90px;
+	padding: 10%;
+	text-align: center;
 }
 
 #faq p{
@@ -286,8 +286,8 @@ form {
 footer
 {
 	background-color: #1a2d34;
-	height: 100px;
 	font-weight: bold;
+	height: 100px;
 	padding:100px 20px;
 
 }
@@ -295,18 +295,18 @@ footer
 
 .trait
 {
-	opacity:0.2;
-	height: 1px;
 	background: #b0a9a7;
+	height: 1px;
 	margin-bottom:5%;
+	opacity:0.2;
 	
 }
 
 #infosite
 {
 	color: #b0a9a7;
-	font-size: 10px;
 	display: inline;
+	font-size: 10px;
 
 }
 
@@ -323,9 +323,9 @@ footer
 }
 
 .bordure{
-	width:50%;
-	border:2px solid;
 	background-color:whitesmoke;
+	border:2px solid;
+	width:50%;
 }
 
 .saisie{
@@ -333,9 +333,9 @@ footer
 }
 
 .retour {
+	left: 40%;
 	margin-top:40px;
 	position: relative;
-	left: 40%;
 }
 
 .submit{
@@ -359,10 +359,10 @@ footer
 
 
 #user h1 {
-	margin-top: 5px;
-	font-weight: bold;
 	color: #fff;
 	font-size: 20px;
+	font-weight: bold;
+	margin-top: 5px;
 }
 
 #imageprofil {
@@ -370,15 +370,15 @@ footer
 }
 
 #user input {
-	font-size: 20px;
 	border-radius: 5px;
+	font-size: 20px;
 	font-weight: bold;
 }
 
 #user span {
-	font-weight: bold;
 	color: #fff;
 	font-size: 29px;
+	font-weight: bold;
 }
 
 #user p {
@@ -386,11 +386,11 @@ footer
 }
 
 .bouttonsubmit {
-	margin-top: 20px;
 	background: #424242;
 	border-radius: 5px;
 	color: #fff;
 	font-size: 20px;
+	margin-top: 20px;
 }
 
 #mdp {
@@ -406,10 +406,10 @@ footer
 
 #adminpage h1 {
 	color: #fff;
-	text-transform: uppercase;
+	font-size: 50px;
 	font-weight: bold;
 	text-align: center;
-	font-size: 50px;
+	text-transform: uppercase;
 }
 
 #adminpage nav {
@@ -418,15 +418,15 @@ footer
 
 
 #adminpage h2 {
-	font-weight: bold;
 	font-size: 30px;
+	font-weight: bold;
 }
 
 .stylequestions {
-	font-weight: bold;
 	background-color: #E9DDDB;
 	border-radius: 5px;
 	font-size: 18px;
+	font-weight: bold;
 }
 
 #general {
@@ -434,10 +434,10 @@ footer
 }
 
 i.fas.fa-trash i.fas.fa-edit {
-	margin-left: 10px;
 	float: right;
-	margin-top: 5px;
+	margin-left: 10px;
 	margin-right: 20px;
+	margin-top: 5px;
 }
 
 #adminpage p {
@@ -447,8 +447,8 @@ i.fas.fa-trash i.fas.fa-edit {
 /*CSS de la page Ajout question*/
 
 #ajoutQuestion{
-	text-align:center;
 	background-color:whitesmoke;
+	text-align:center;
 }
 
 .liens {
@@ -468,15 +468,15 @@ h2 {
 }
 /*Commentaire*/
 .right {
-	position: absolute;
-	left: 75%;
-	width: 25%;
 	display: inline-block;
+	left: 75%;
+	position: absolute;
+	width: 25%;
 }
 /*Image personnes*/
 .persona3 {
-	width: 5%;
 	margin-left: 65%;
+	width: 5%;
 }
 
 .persona1 {
@@ -489,24 +489,24 @@ h2 {
 }
 /*Commentaires*/
 .comments1 {
-	padding: 20px;
-	margin-bottom: 30px;
 	height: 175px;
+	margin-bottom: 30px;
+	padding: 20px;
 }
 
 .commentp {
-	height: 100%;
-	width: 90%;
 	display: inline-block;
 	float: right;
+	height: 100%;
+	width: 90%;
 }
 /*Image de profil*/
 .CommentIcon {
-	width: 100px;
-	height: 100px;
 	border-radius: 50px;
-	padding: 20px;
+	height: 100px;
 	margin-left: 20px;
+	padding: 20px;
+	width: 100px;
 }
 
 .description-perso {
@@ -514,15 +514,15 @@ h2 {
 }
 /*Menu de navigation*/
 .menu {
-	word-spacing: 50%;
 	color: white;
-	margin-left: 10px;
 	font-weight: bold;
+	margin-left: 10px;
+	word-spacing: 50%;
 }
 /*Menu*/
 .bloc {
-	background-position: right top;
 	background-color: #FF007F;
+	background-position: right top;
 	color: pink;
 }
 
@@ -539,10 +539,10 @@ h2 {
 }
 /*Commentaire*/
 .right {
+	display: inline-block;
 	position: absolute;
 	right: 75%;
 	width: 25%;
-	display: inline-block;
 }
 
 .folder {
@@ -550,9 +550,9 @@ h2 {
 }
 /*Compte utilisateur*/
 .compte {
-	text-align: right;
-	margin-right: 2%;
 	margin-bottom: -5%;
+	margin-right: 2%;
+	text-align: right;
 }
 /*Fond gris*/
 .background-grey {
@@ -580,8 +580,8 @@ label {
 }
 
 .background-grey1 {
-	margin-bottom: 5px;
 	background-color: #E6E6E6;
+	margin-bottom: 5px;
 }
 
 .img4 {
@@ -593,13 +593,13 @@ label {
 }
 
 .profil {
-	text-align: right;
 	color: white;
+	text-align: right;
 }
 
 .image-utilisateur {
-	height: 5%;
 	border-radius: 100%;
+	height: 5%;
 }
 /*Boutons annuler / valider index3*/
 .choix {
@@ -611,8 +611,8 @@ label {
 }
 /*Graphique index3*/
 .anneaux {
-	width: 30%;
 	margin-left: 10%;
+	width: 30%;
 }
 /*Titre question index3*/
 h3 {
