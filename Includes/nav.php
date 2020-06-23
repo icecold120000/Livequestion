@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbarcouleur" >
-	<a class="navbar-brand" href="index.php">Saint Vincent BTS 1</a>
+	<a class="navbar-brand" href="./">Saint Vincent BTS 1</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<i class="fas fa-bars"></i>
 	</button>
