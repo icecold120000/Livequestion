@@ -3,7 +3,7 @@
 ?>
 	<main>
 		<!--Partie accueil-->
-		<section id="part1" >
+		<section id="part1">
 			<div class="container">
 				<img src="Contents/step-1.png" class="screenshot">
 				<h1>Lorem Ipsum <span>dolor sit <span>amet</h1>

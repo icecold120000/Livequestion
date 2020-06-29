@@ -1,5 +1,6 @@
-
 			<footer>
+			<div class=whitebloc>
+			</div>
 				<div>
 					<div class="trait"></div>
 					<p id="infosite">@ Page protected by reCAPTCHA and subject to Google's Privacy Policy and Terms of Service</p>

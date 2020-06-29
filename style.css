@@ -292,7 +292,11 @@ footer
 
 }
 
-
+.whitebloc {
+	background-color: #fff;
+	border-bottom-left-radius: 55% 90px;
+	border-bottom-right-radius: 55% 90px;
+}
 .trait
 {
 	background: #b0a9a7;
