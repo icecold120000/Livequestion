@@ -292,7 +292,11 @@ footer
 
 }
 
-
+.whitebloc {
+	background-color: #fff;
+	border-bottom-left-radius: 55% 90px;
+	border-bottom-right-radius: 55% 90px;
+}
 .trait
 {
 	background: #b0a9a7;
@@ -307,12 +311,13 @@ footer
 	color: #b0a9a7;
 	display: inline;
 	font-size: 10px;
-
+	margin-left: 10%;
 }
 
 #logos
 {
 	float: right;
+	margin-right: 20%;
 }
 
 /*CSS de la page d'inscription et de la page de connexion du site*/
