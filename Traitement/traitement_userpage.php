@@ -2,6 +2,9 @@
 	require_once('./DB/request.php');
 	function PreTraitement(array $informations){
 		$erreurs = [];
+		if (empty($informations['iduser'])) {
+			$erreurs['iduser'] = 'Veuillez indique l\'identifiant de votre utilisateur';
+		}
 		if (empty($informations['nameuser'])) {
 			$erreurs['nameuser'] = 'Veuillez saisir un nom d\'utilisateur';
 		}
