@@ -5,9 +5,9 @@
 	if (!empty($_POST)) {
 		$traitement = preTraitement($_POST);
 		if($traitement['success']){
-			Request($DB, "UPDATE :nameuser INTO utilisateur",$_POST['nameuser']);
-			Request($DB, "UPDATE :emailuser INTO utilisateur",$_POST['emailuser']);
-			Request($DB, "UPDATE :mdpuser INTO utilisateur",$_POST['mdpuser']);			
+			Request($DB, "UPDATE :nameuser INTO utilisateur", $_POST['nameuser']);
+			Request($DB, "UPDATE :emailuser INTO utilisateur", $_POST['emailuser']);
+			Request($DB, "UPDATE :mdpuser INTO utilisateur", $_POST['mdpuser']);			
 		}
 	}
 ?>
