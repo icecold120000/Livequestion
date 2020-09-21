@@ -2,10 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Hôte : localhost
--- Généré le : lun. 21 sep. 2020 à 07:41
--- Version du serveur :  5.7.11
--- Version de PHP : 7.4.10
+-- Hôte : 127.0.0.1
+-- Généré le :  lun. 15 juin 2020 à 12:24
+-- Version du serveur :  5.7.17
+-- Version de PHP :  7.1.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -44,18 +44,6 @@ CREATE TABLE `categorie` (
   `id_categorie` int(11) NOT NULL,
   `lbl_categorie` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Déchargement des données de la table `categorie`
---
-
-INSERT INTO `categorie` (`id_categorie`, `lbl_categorie`) VALUES
-(1, 'Français'),
-(2, 'Maths'),
-(3, 'Anglais'),
-(4, 'Philosophie'),
-(5, 'Sport'),
-(6, 'Informatique');
 
 -- --------------------------------------------------------
 
@@ -225,7 +213,7 @@ ALTER TABLE `utilisateur`
 -- AUTO_INCREMENT pour la table `categorie`
 --
 ALTER TABLE `categorie`
-  MODIFY `id_categorie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_categorie` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT pour la table `date`
