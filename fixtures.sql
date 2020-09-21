@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : lun. 21 sep. 2020 à 07:20
+-- Généré le : lun. 21 sep. 2020 à 07:41
 -- Version du serveur :  5.7.11
 -- Version de PHP : 7.4.10
 
@@ -50,7 +50,12 @@ CREATE TABLE `categorie` (
 --
 
 INSERT INTO `categorie` (`id_categorie`, `lbl_categorie`) VALUES
-(1, 'Français');
+(1, 'Français'),
+(2, 'Maths'),
+(3, 'Anglais'),
+(4, 'Philosophie'),
+(5, 'Sport'),
+(6, 'Informatique');
 
 -- --------------------------------------------------------
 
@@ -220,7 +225,7 @@ ALTER TABLE `utilisateur`
 -- AUTO_INCREMENT pour la table `categorie`
 --
 ALTER TABLE `categorie`
-  MODIFY `id_categorie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_categorie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `date`
