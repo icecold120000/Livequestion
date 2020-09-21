@@ -19,5 +19,7 @@
 			</li>
 		</ul>
 	</div>
-	<a href="formconnexion.php"><button class="bouton" id="navbtn">Se connecter</button></a>				
+	<a href="./disconnect.php">
+			<button class="button">Se déconnecter</button>
+	</a>				
 </nav>

@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1
--- Généré le :  lun. 15 juin 2020 à 12:24
--- Version du serveur :  5.7.17
--- Version de PHP :  7.1.3
+-- Hôte : localhost
+-- Généré le : lun. 21 sep. 2020 à 07:20
+-- Version du serveur :  5.7.11
+-- Version de PHP : 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,8 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `livequestion`
+-- Base de données : `livequestion`
 --
+CREATE DATABASE IF NOT EXISTS `livequestion` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `livequestion`;
 
 -- --------------------------------------------------------
 
@@ -43,6 +44,13 @@ CREATE TABLE `categorie` (
   `id_categorie` int(11) NOT NULL,
   `lbl_categorie` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Déchargement des données de la table `categorie`
+--
+
+INSERT INTO `categorie` (`id_categorie`, `lbl_categorie`) VALUES
+(1, 'Français');
 
 -- --------------------------------------------------------
 
@@ -91,12 +99,12 @@ CREATE TABLE `question` (
 --
 
 INSERT INTO `question` (`id_question`, `titre_question`, `id_date`, `id_utilisateur`, `nombre_like`) VALUES
-(1, 'Can I upgrade later on ?', 8, 1, 55),
+(1, 'Can I upgrade later on ?', 8, 10, 55),
 (2, 'Can I port my data from another provider ?', 4, 1, 3),
-(3, 'Are my food photos stored forever in the cloud ?', 5, 1, 88),
-(4, 'Who foots the bills for that ?', 8, 1, 23),
+(3, 'Are my food photos stored forever in the cloud ?', 5, 6, 88),
+(4, 'Who foots the bills for that ?', 8, 7, 23),
 (5, 'What\'s the real cost ?', 8, 1, 97),
-(6, 'Can my company request a custom plan ?', 3, 1, 48);
+(6, 'Can my company request a custom plan ?', 3, 9, 48);
 
 -- --------------------------------------------------------
 
@@ -152,7 +160,8 @@ INSERT INTO `utilisateur` (`id_utilisateur`, `pseudo_utilisateur`, `mdp_utilisat
 (6, 'ihovctdx', 'bikyftdrs', 'zecaca.cnqds@dxz.fr', '1', 'DefaultX.jpg', 2, 2),
 (7, 'dDkoopc', 'caoaca', 'coacsa.ccaq@gmail.com', '2', 'DefaultB.jpg', 6, 2),
 (9, 'çucoqscsqac', 'acnlkivfj', 'cniiaq.cidqb@ccdsx.com', '2', 'Defaultvv.jpg', 7, 2),
-(10, 'nniovyoiblbb', 'hoonolbub', 'hhbibnib.naupco@byc.com', '1', 'DefaultH.jpg', 1, 2);
+(10, 'nniovyoiblbb', 'hoonolbub', 'hhbibnib.naupco@byc.com', '1', 'DefaultH.jpg', 1, 2),
+(12, 'root', 'root', 'root.roo@gmail.com', '1', 'De.jpg', 6, 1);
 
 --
 -- Index pour les tables déchargées
@@ -200,6 +209,7 @@ ALTER TABLE `reponse`
 ALTER TABLE `utilisateur`
   ADD PRIMARY KEY (`id_utilisateur`),
   ADD UNIQUE KEY `pseudo_utilisateur` (`pseudo_utilisateur`),
+  ADD UNIQUE KEY `img_utilisateur` (`img_utilisateur`),
   ADD KEY `UTIFK` (`id_date`);
 
 --
@@ -210,7 +220,7 @@ ALTER TABLE `utilisateur`
 -- AUTO_INCREMENT pour la table `categorie`
 --
 ALTER TABLE `categorie`
-  MODIFY `id_categorie` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_categorie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `date`
@@ -234,7 +244,7 @@ ALTER TABLE `reponse`
 -- AUTO_INCREMENT pour la table `utilisateur`
 --
 ALTER TABLE `utilisateur`
-  MODIFY `id_utilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_utilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Contraintes pour les tables déchargées

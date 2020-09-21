@@ -16,7 +16,7 @@
 		<div class="container-fluid">
 			<h1>Modifiez votre profil</h1>
 		</div>
-		<div class="container">
+		<div class="container-fluid">
 			<div>
 				<img src="Contents/Default.jpg" id="imageprofil">
 				<form class="bouttonchange">
@@ -24,10 +24,10 @@
 					<input type='file' id="getFile" class="collapse">
 				</form>
 			</div>
-			<form class="form" method="POST">
+			<form class="form" method="POST" action="./userpage.php">
 				<div class="form-control">
-					<span>Nom d'utilisateur *</span>
-					<input type="text" name="nameuser" placeholder="<?php Request($DB, "INSERT :nameuser FROM utilisateur"); ?>" class="input">
+					<span>Nom d'utilisateur :</span>
+					<input type="text" name="nameuser" placeholder="Veuiller saisir votre nouveau nom d'utilisateur" class="input">
 					<?php
 						if (isset($traitement['erreurs']['nameuser'])) {
 							echo "<span class='erreur'>".$traitement['erreurs']['nameuser']."</span>";
@@ -35,8 +35,8 @@
 					?>
 				</div>
 				<div class="form-control">
-					<span>E-mail *</span>
-					<input type="text" name="emailuser" placeholder="<?php Request($DB, "INSERT :emailuser FROM utilisateur"); ?>" class="input">
+					<span>E-mail :</span>
+					<input type="text" name="emailuser" placeholder="Veuiller saisir votre nouveau email" class="input">
 					<?php
 						if (isset($traitement['erreurs']['emailuser'])) {
 							echo "<span class='erreur'>".$traitement['erreurs']['emailuser']."</span>";
@@ -44,8 +44,8 @@
 					?>
 				</div>
 				<div class="form-control">
-					<span>Mot de passe *</span>
-					<input type="text" name="mdpuser" placeholder="<?php Request($DB, "INSERT :mdpuser FROM utilisateur"); ?>" class="input">
+					<span>Mot de passe :</span>
+					<input type="text" name="mdpuser" placeholder="Veuiller saisir votre nouveau mot de passe" class="input">
 					<?php
 						if (isset($traitement['erreurs']['mdpuser'])) {
 							echo "<span class='erreur'>".$traitement['erreurs']['mdpuser']."</span>";
