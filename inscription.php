@@ -5,6 +5,9 @@
 	if (!empty($_POST)) {
 		$traitement = preTraitement($_POST);
 		if($traitement['success']){
+			$now = new \DateTime('NOW');
+			$now = $now->format('Y-m-d H:i:s');
+			Request($DB, "INSERT INTO `date` VALUES `date_creation`=:date_time_now WHERE `first_name`=:username", ['date_time_now'=>$now, 'username'=> $_POST['user_form']]);
 			if($DB != null){
 				$testReq = Traitement($DB, $_POST)->errorInfo();
 			}
@@ -15,6 +18,8 @@
 				$traitement = PostTraitement($DB, $_POST);
 			}
 		}
+		header('Location: ./');
+		exit();
 	}
 ?>
 	<main>

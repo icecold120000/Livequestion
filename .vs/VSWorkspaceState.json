@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\admin",
     "\\DB",
-    "\\Includes"
+    "\\Traitement"
   ],
-  "SelectedNode": "\\Includes\\header.php",
+  "SelectedNode": "\\inscription.php",
   "PreviewInSolutionExplorer": false
 }

@@ -6,9 +6,9 @@
 		$traitement = preTraitement($_POST);
 		if($traitement['success']){
 			Request($DB, "SELECT :iduser FROM utilisateur");
-			Request($DB, "UPDATE utilisateur SET :nameuser = $_POST['nameuser'] WHERE :iduser = $_GET['iduser']");
-			Request($DB, "UPDATE utilisateur SET :emailuser = $_POST['emailuser'] WHERE :iduser = $_GET['iduser']");
-			Request($DB, "UPDATE utilisateur SET :mdpuser = $_POST['mdpuser'] WHERE iduser = $_GET['iduser']");			
+			Request($DB, "UPDATE utilisateur SET :nameuser = $_POST['nameuser_form'] WHERE :iduser = $_GET['iduser_form']");
+			Request($DB, "UPDATE utilisateur SET :emailuser = $_POST['emailuser_form'] WHERE :emailuser = $_GET['emailuser_form']");
+			Request($DB, "UPDATE utilisateur SET :mdpuser = $_POST['mdpuser_form'] WHERE mdpuser = $_GET['mdpuser_form']");			
 		}
 	}
 ?>
@@ -27,19 +27,19 @@
 			<form class="form" method="POST" action="./userpage.php">
 				<div class="form-control">
 					<span>Nom d'utilisateur :</span>
-					<input type="text" name="nameuser" placeholder="Veuiller saisir votre nouveau nom d'utilisateur" class="input">
+					<input type="text" name="nameuser_form" placeholder="Veuiller saisir votre nouveau nom d'utilisateur" class="input">
 					<?php
-						if (isset($traitement['erreurs']['nameuser'])) {
-							echo "<span class='erreur'>".$traitement['erreurs']['nameuser']."</span>";
+						if (isset($traitement['erreurs']['nameuser_form'])) {
+							echo "<span class='erreur'>".$traitement['erreurs']['nameuser_form']."</span>";
 						}
 					?>
 				</div>
 				<div class="form-control">
 					<span>E-mail :</span>
-					<input type="text" name="emailuser" placeholder="Veuiller saisir votre nouveau email" class="input">
+					<input type="text" name="emailuser_form" placeholder="Veuiller saisir votre nouveau email" class="input">
 					<?php
-						if (isset($traitement['erreurs']['emailuser'])) {
-							echo "<span class='erreur'>".$traitement['erreurs']['emailuser']."</span>";
+						if (isset($traitement['erreurs']['emailuser_form'])) {
+							echo "<span class='erreur'>".$traitement['erreurs']['emailuser_form']."</span>";
 						}
 					?>
 				</div>
@@ -47,8 +47,8 @@
 					<span>Mot de passe :</span>
 					<input type="text" name="mdpuser" placeholder="Veuiller saisir votre nouveau mot de passe" class="input">
 					<?php
-						if (isset($traitement['erreurs']['mdpuser'])) {
-							echo "<span class='erreur'>".$traitement['erreurs']['mdpuser']."</span>";
+						if (isset($traitement['erreurs']['mdpuser_form'])) {
+							echo "<span class='erreur'>".$traitement['erreurs']['mdpuser_form']."</span>";
 						}
 					?>
 				</div>
