@@ -1,0 +1,46 @@
+/*CSS de la Page administratif*/
+
+#adminpage h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#adminpage nav {
+    background: #FF33F0;
+}
+
+
+#adminpage h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.stylequestions {
+    background-color: #E9DDDB;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#general {
+    margin-top: 10px;
+}
+
+i.fas.fa-trash i.fas.fa-edit {
+    float: right;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+#adminpage p {
+    margin-left: 2px;
+}
+
+
+.erreur {
+    color: red;
+}

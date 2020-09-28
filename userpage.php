@@ -5,9 +5,10 @@
 	if (!empty($_POST)) {
 		$traitement = preTraitement($_POST);
 		if($traitement['success']){
-			Request($DB, "UPDATE :nameuser INTO utilisateur", $_POST['nameuser']);
-			Request($DB, "UPDATE :emailuser INTO utilisateur", $_POST['emailuser']);
-			Request($DB, "UPDATE :mdpuser INTO utilisateur", $_POST['mdpuser']);			
+			Request($DB, "SELECT :iduser FROM utilisateur");
+			Request($DB, "UPDATE utilisateur SET :nameuser = $_POST['nameuser_form'] WHERE :iduser = $_GET['iduser_form']");
+			Request($DB, "UPDATE utilisateur SET :emailuser = $_POST['emailuser_form'] WHERE :emailuser = $_GET['emailuser_form']");
+			Request($DB, "UPDATE utilisateur SET :mdpuser = $_POST['mdpuser_form'] WHERE mdpuser = $_GET['mdpuser_form']");			
 		}
 	}
 ?>
@@ -15,7 +16,7 @@
 		<div class="container-fluid">
 			<h1>Modifiez votre profil</h1>
 		</div>
-		<div class="container">
+		<div class="container-fluid">
 			<div>
 				<img src="Contents/Default.jpg" id="imageprofil">
 				<form class="bouttonchange">
@@ -23,31 +24,31 @@
 					<input type='file' id="getFile" class="collapse">
 				</form>
 			</div>
-			<div class="formulaire" method="POST">
-				<div>
-					<span>Nom d'utilisateur *</span>
-					<input type="text" name="nameuser" placeholder="<?php Request($DB, "INSERT :nameuser FROM utilisateur"); ?>" class="input">
+			<form class="form" method="POST" action="./userpage.php">
+				<div class="form-control">
+					<span>Nom d'utilisateur :</span>
+					<input type="text" name="nameuser_form" placeholder="Veuiller saisir votre nouveau nom d'utilisateur" class="input">
 					<?php
-						if (isset($traitement['erreurs']['nameuser'])) {
-							echo "<span class='erreur'>".$traitement['erreurs']['nameuser']."</span>";
+						if (isset($traitement['erreurs']['nameuser_form'])) {
+							echo "<span class='erreur'>".$traitement['erreurs']['nameuser_form']."</span>";
 						}
 					?>
 				</div>
-				<div>
-					<span>E-mail *</span>
-					<input type="text" name="emailuser" placeholder="<?php Request($DB, "INSERT :emailuser FROM utilisateur"); ?>" class="input">
+				<div class="form-control">
+					<span>E-mail :</span>
+					<input type="text" name="emailuser_form" placeholder="Veuiller saisir votre nouveau email" class="input">
 					<?php
-						if (isset($traitement['erreurs']['emailuser'])) {
-							echo "<span class='erreur'>".$traitement['erreurs']['emailuser']."</span>";
+						if (isset($traitement['erreurs']['emailuser_form'])) {
+							echo "<span class='erreur'>".$traitement['erreurs']['emailuser_form']."</span>";
 						}
 					?>
 				</div>
-				<div>
-					<span>Mot de passe *</span>
-					<input type="text" name="mdpuser" placeholder="<?php Request($DB, "INSERT :mdpuser FROM utilisateur"); ?>" class="input">
+				<div class="form-control">
+					<span>Mot de passe :</span>
+					<input type="text" name="mdpuser" placeholder="Veuiller saisir votre nouveau mot de passe" class="input">
 					<?php
-						if (isset($traitement['erreurs']['mdpuser'])) {
-							echo "<span class='erreur'>".$traitement['erreurs']['mdpuser']."</span>";
+						if (isset($traitement['erreurs']['mdpuser_form'])) {
+							echo "<span class='erreur'>".$traitement['erreurs']['mdpuser_form']."</span>";
 						}
 					?>
 				</div>
@@ -55,7 +56,7 @@
 					<input type="submit" name="submit" placeholder="Valider" class="bouttonsubmit">
 				</div>
 			</div>
-		</div>
+		</form>
 	</section>
 <?php
 	require_once('./Includes/footer.php');

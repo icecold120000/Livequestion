@@ -1,4 +1,12 @@
 <?php
+	session_start();
+	if(!isset($_SESSION['username'])){
+		header('Location: ./formconnection.php');
+		exit();
+	}
+	require_once("./DB/connect.php");
+	require_once("./DB/request.php");
+	$DB = ConnectDB("livequestion", "127.0.0.1", "3306", "root", "root");
 	require_once('./Includes/header.php');
 ?>
 	<main>
